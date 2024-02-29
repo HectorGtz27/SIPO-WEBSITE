@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css"
+    />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <main>
+      <header class="hero-section">
+        <!-- Imagen de fondo y título principal -->
+        <div class="hero-image-container">
+          <img
+            src="images/encora-logo.svg"
+            alt="Hero Image"
+            class="hero-image"
+          />
+        </div>
+      </header>
+
+      <section class="login-section">
+        <div class="login-container">
+          <h2>Welcome!</h2>
+          <p class="subtitle">Enter your email and password to sign in.</p>
+          <form>
+            <div class="form-group">
+              <label class="email-text" for="email">Email:</label>
+              <input type="email" id="email" placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <label class="password-text" for="password">Password:</label>
+              <input type="password" id="password" placeholder="Password" />
+            </div>
+            <p class="remember-text">Remember</p>
+            <label for="remember" class="switch">
+              <input type="checkbox" id="remember" />
+              <span class="slider round"></span>
+            </label>
+            <button class="sign-in-button" type="submit">Sign in</button>
+            <button class="microsoft-login-btn">
+              <img
+                src="images/microsoft-logo.png"
+                alt="Microsoft Logo"
+                class="microsoft-logo"
+              />
+              <p class="sign-text">Sign in with microsoft</p>
+            </button>
+            <p class="account-sign-text">
+              Don't have an account? <a class="signup-link" href="#">Sign up</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
