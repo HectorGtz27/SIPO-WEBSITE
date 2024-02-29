@@ -64,6 +64,7 @@ h2 {
   cursor: pointer;
   margin-top: 20px;
   margin-bottom: 10px;
+  transition: background-color 0.3s; /* Transición suave al cambiar de color */
 }
 
 button:hover {
