@@ -35,25 +35,34 @@
       </header>
 
       <section class="login-section">
-        <div class="login-container">
+        <article class="login-container">
           <h2>Welcome!</h2>
           <p class="subtitle">Enter your email and password to sign in.</p>
-          <form>
+          <form aria-label="Login form">
             <div class="form-group">
               <label class="email-text" for="email">Email:</label>
-              <input type="email" id="email" placeholder="Email" />
+              <input type="email" id="email" placeholder="Email" required />
             </div>
             <div class="form-group">
               <label class="password-text" for="password">Password:</label>
-              <input type="password" id="password" placeholder="Password" />
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
             </div>
             <p class="remember-text">Remember</p>
             <label for="remember" class="switch">
-              <input type="checkbox" id="remember" />
+              <input
+                type="checkbox"
+                id="remember"
+                aria-describedby="remember-info"
+              />
               <span class="slider round"></span>
             </label>
-            <button class="sign-in-button" type="submit">Sign in</button>
-            <button class="microsoft-login-btn">
+            <button class="sign-in-button" type="button">Sign in</button>
+            <button class="microsoft-login-btn" type="button">
               <img
                 src="images/microsoft-logo.png"
                 alt="Microsoft Logo"
@@ -61,11 +70,12 @@
               />
               <p class="sign-text">Sign in with microsoft</p>
             </button>
+
             <p class="account-sign-text">
               Don't have an account? <a class="signup-link" href="#">Sign up</a>
             </p>
           </form>
-        </div>
+        </article>
       </section>
     </main>
   </body>
